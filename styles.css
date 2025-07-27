@@ -1,93 +1,118 @@
-h1, p{
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Sansation", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1, p {
   text-align: center;
   font-size: 1.6rem;
-  font-family: "Sansation", sans-serif;
 }
 
-main{
-  color: #333;
-}
-
-#title{
+#title {
   background-color: silver;
+  padding: 1rem;
 }
 
-#title h1{
+#title h1 {
   color: white;
 }
 
 #img-div {
-  text-align: center; 
-  max-width: 100%;     
-  margin: auto;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 #image {
-  max-width: 100%;     
+  max-width: 100%;
   height: auto;
-  display: block;      
+  display: block;
   margin: auto;
+  border-radius: 8px;
 }
 
 #img-caption {
   font-size: 1rem;
   color: #333;
   margin-top: 8px;
-  font-family: "Sansation", sans-serif;
 }
 
-
-#headline{
-  margin: 50px 0;
+#headline {
+  margin: 2rem 0 1rem;
   text-align: center;
-  font-family: "Sansation", sans-serif;
-}
-  
-li{
-  list-style-type: none;
-  padding: 5px;
-  font-family: "Sansation", sans-serif;
-}
-
-#tribute-info{
-    width: max-content;
-  margin: 0 auto;
-  padding-left: 20px;
-  text-align: center;
-  list-style-position: outside;
 }
 
 ul {
-  width: max-content;
+  list-style-type: none;
+  padding: 0;
   margin: 0 auto;
-  padding-left: 20px;
-  text-align: left;
-  list-style-position: outside; 
+  max-width: 600px;
 }
 
-blockquote{
-  font-family: "Sansation", sans-serif;
-  width: max-content;
-  margin: 0 auto;
-  padding-left: 20px;
-  text-align: left;
-  list-style-position: outside;
+li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
 }
 
-h3{
-  font-family: "Sansation", sans-serif;
-  width: max-content;
-  margin: 0 auto;
-  padding-left: 20px;
-  text-align: left;
-  list-style-position: outside;
+#tribute-info {
+  padding: 1rem;
+  text-align: center;
 }
 
-a#tribute-link{
-  font-family: "Sansation", sans-serif;
-  width: max-content;
-  margin: 0 auto;
-  padding-left: 20px;
+blockquote {
+  margin: 2rem auto;
+  padding: 1rem;
+  font-style: italic;
+  border-left: 4px solid #ccc;
+  max-width: 600px;
   text-align: left;
-  list-style-position: outside;
+}
+
+h3 {
+  margin: 2rem auto 1rem;
+  max-width: 600px;
+  text-align: left;
+}
+
+a#tribute-link {
+  color: #0066cc;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+a#tribute-link:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+
+  #img-caption, blockquote {
+    font-size: 0.9rem;
+  }
 }
